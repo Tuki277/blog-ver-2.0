@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Post</title>
+
+    <!-- Bootstrap -->
+    <link href="../admin/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../admin/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../admin/css/nprogress.css" rel="stylesheet">
+    <!-- Dropzone.js -->
+    <link href="../admin/css/dropzone.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../admin/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>post Education</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <form class="form-horizontal form-label-left" action="/admin/postEducation"
+                             method="POST">
+                            <div class="form-group row">
+                                <label class="control-label col-md-3" for="title">Tiêu đề<span class="required">*</span>
+                                </label>
+                                <div class="col-md-12">
+                                    <input type="text" required name="title" class="form-control col-md-7 ">
+                                </div>
+
+                                <label class="control-label col-md-3" for="detail">Sự kiện<span
+                                        class="required">*</span>
+                                </label>
+                                <div class="col-md-12">
+                                    <textarea required name="detail" class="form-control col-md-7 "></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- jQuery -->
+            <script src="../admin/js/jquery.min.js"></script>
+            <!-- Bootstrap -->
+            <script src="../admin/js/bootstrap.bundle.min.js"></script>
+            <!-- FastClick -->
+            <script src="../admin/js/fastclick.js"></script>
+            <!-- NProgress -->
+            <script src="../admin/js/nprogress.js"></script>
+            <!-- Dropzone.js -->
+            <script src="../admin/js/dropzone.min.js"></script>
+
+            <!-- Custom Theme Scripts -->
+            <script src="../admin/js/custom.min.js"></script>
+</body>
+
+</html>

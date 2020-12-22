@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chỉnh sửa sản phẩm</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <div class="site-wrap">
+        <div class="site-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <form class="col-md-12">
+                        <div class="site-blocks-table">
+                            <h2>Event</h2>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Detail</th>
+                                        <th>Remove</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <% for (var i = 0; i < event.length; i++) { %>
+                                <tbody>
+                                    <tr>
+                                        <!-- <td class="product-thumbnail">
+                                            <img src="" alt="Image" class="img-fluid">
+                                        </td> -->
+                                        <td><%= event[i].title %></td>
+                                        <td><%= event[i].detail %></td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-sm">X</a></td>
+                                        <td><a href="/admin/findUpdate" class="btn btn-primary btn-sm">Edit</a></td>
+                                    </tr>
+                                </tbody>
+                                <% } %>
+                            </table>
+                        </div>
+
+                        <div class="site-blocks-table">
+                            <h2>Project</h2>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Detail</th>
+                                        <th>Remove</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <% for (var i = 0; i < project.length; i++) { %>
+                                <tbody>
+                                    <tr>
+                                        <!-- <td class="product-thumbnail">
+                                            <img src="" alt="Image" class="img-fluid">
+                                        </td> -->
+                                        <td><%= project[i].title %></td>
+                                        <td><%= project[i].detail %></td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-sm">X</a></td>
+                                        <td><a href="/admin/findUpdate" class="btn btn-primary btn-sm">Edit</a></td>
+                                    </tr>
+                                </tbody>
+                                <% } %>
+                            </table>
+                        </div>
+
+                        <div class="site-blocks-table">
+                            <h2>Education</h2>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Detail</th>
+                                        <th>Remove</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <% for (var i = 0; i < education.length; i++ ) { %>
+                                <tbody>
+                                    <tr>
+                                        <!-- <td class="product-thumbnail">
+                                            <img src="" alt="Image" class="img-fluid">
+                                        </td> -->
+                                        <td><%= education[i].title %></td>
+                                        <td><%= education[i].detail %></td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-sm">X</a></td>
+                                        <td><a href="/admin/findUpdate" class="btn btn-primary btn-sm">Edit</a></td>
+                                    </tr>
+                                </tbody>
+                                <% } %>
+                            </table>
+                        </div>
+
+                        <div class="site-blocks-table">
+                            <h2>ProfessionalExperience</h2>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Detail</th>
+                                        <th>Remove</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <% for (var i = 0; i < ProfessionalExperience.length; i++ ) { %>
+                                <tbody>
+                                    <tr>
+                                        <!-- <td class="product-thumbnail">
+                                            <img src="" alt="Image" class="img-fluid">
+                                        </td> -->
+                                        <td><%= ProfessionalExperience[i].title %></td>
+                                        <td><%= ProfessionalExperience[i].detail %></td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-sm">X</a></td>
+                                        <td><a href="/admin/findUpdate" class="btn btn-primary btn-sm">Edit</a></td>
+                                    </tr>
+                                </tbody>
+                                <% } %>
+                            </table>
+                        </div>
+                        <button type="button" class="btn btn-primary"><a href="/admin" style="color: white; text-decoration: none;">Về trang chính</a></button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/aos.js"></script>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
